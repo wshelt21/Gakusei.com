@@ -1,7 +1,7 @@
 
 .post-banner {
     overflow: hidden;
-    background: url(/images/Optimized-image_3.jpg) no-repeat center;
+    background: url(../images/Optimized-image_3.jpg) no-repeat center;
     background-size: cover;
     margin: 0 auto;
 }
