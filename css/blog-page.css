@@ -1,0 +1,116 @@
+
+.post-banner {
+    overflow: hidden;
+    background: url(/images/Optimized-image_3.jpg) no-repeat center;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.postbanner-container{
+  margin: 20px 0;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 26px;
+  text-shadow: 0 0 5px rgb(231, 69, 69);
+}
+
+.post {
+  max-width: 1000px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 3fr 12fr 5fr;
+  grid-gap: 10px 50px;
+
+}
+
+.post > *{
+  grid-column: 2/ -2;
+}
+
+.post > blockquote {
+  grid-column: 1/ -1;
+  font-size: 60px;
+  text-align: center;
+  font-style: italic;
+}
+
+.post > figure {
+  margin: 0;
+  grid-column: 1 / -1;
+  overflow: hidden;
+}
+a{
+  color: black;
+}
+
+a:hover{
+  color:rgb(231, 69, 69);
+}
+
+.tip{
+  background: #fafafa;
+  padding: 10px;
+}
+
+.tip-left{
+  grid-column: 1/ span 1;
+  text-align: right;
+  border-right: 2px solid red;
+  align-self: start;
+}
+.tip-right{
+  grid-column: span 1 / -1;
+  text-align: left;
+  grid-row: 2;
+  border-left: 2px solid red;
+  align-self: start;
+}
+
+h2{
+  margin-top: 10px;
+}
+
+.lang-pros p ul li {
+  margin-top: 15px;
+}
+.bio-tip ul {
+  list-style: none;
+}
+.bio-tip ul li {
+  font-size: 12px;
+  color: rgb(156, 156, 156);
+  padding: 5px;
+}
+
+.bio-tip ul li:nth-child(1) {
+  font-size: 14px;
+  color: rgb(156, 156, 156);
+  padding: 5px;
+}
+.bio-tip img {
+  float: right;
+  margin-top: 20px;
+}
+  /*Response section*/
+ 
+@media screen and (max-width:768px) {
+    .main-content{
+      width: auto;
+      margin: 0 ;
+  }
+
+  .post > p {
+    grid-column: 1/ -1;
+    margin: 0 20px;
+  }
+  .post > blockquote {
+   padding: 0 10px;
+  }
+  .tip{
+    grid-column: 1/ -1;
+    font-size: 20px;
+  }
+}
+

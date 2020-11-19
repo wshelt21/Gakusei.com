@@ -1,0 +1,139 @@
+html {
+    position: relative;
+}
+.cat-header{
+    height: 100px;
+    margin-top: 20px;
+    padding: 10px;
+    grid-column: 1 / -1;
+    color: #fff;
+    background: url(/images/image_13.jpg);
+    background-size: cover;
+    text-shadow: 0 0 10px black;
+}
+.cat-header2{
+  height: 100px;
+  margin-top: 20px;
+  padding: 10px;
+  grid-column: 1 / -1;
+  color: #fff;
+  background: url(/images/image_14.jpg);
+  background-size: cover;
+  text-shadow: 0 0 10px black;
+}
+.cat-header3{
+  height: 100px;
+  margin-top: 20px;
+  padding: 10px;
+  grid-column: 1 / -1;
+  color: #fff;
+  background: url(/images/image_15.jpg);
+  background-size: cover;
+  text-shadow: 0 0 10px black;
+}
+.cat-header4{
+  height: 100px;
+  margin-top: 20px;
+  padding: 10px;
+  grid-column: 1 / -1;
+  color: #fff;
+  background: url(/images/image_16.jpg);
+  background-size: cover;
+  text-shadow: 0 0 10px black;
+}
+.cat-header5{
+  height: 100px;
+  margin-top: 20px;
+  padding: 10px;
+  grid-column: 1 / -1;
+  color: #fff;
+  background: url(/images/image_17.jpg);
+  background-size: cover;
+  text-shadow: 0 0 10px black;
+}
+.cat-main {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 3fr 12fr 5fr;
+    grid-gap: 10px 50px;
+  
+  }
+  .cat-main > *{
+    grid-column: 2/ -2;
+  }
+  
+  .cat-main > blockquote {
+    grid-column: 1/ -1;
+    font-size: 60px;
+    text-align: center;
+    font-style: italic;
+  }
+  
+  .cat-main > figure {
+    margin: 0;
+    grid-column: 1 / -1;
+    overflow: hidden;
+  }
+
+  .cards{
+      grid-column: 1/ -1;
+  }
+  
+  .sub-list{
+    padding: 5px;
+    margin-top: 10px;
+    grid-column: 1 / -1;
+  }
+
+  .sub-list li {
+      list-style: none;
+      padding: 5px 5px 5px 15px;
+      margin: 5px 0px;
+      background-color: rgb(236, 171, 171);
+  }
+  .sub-list li a {
+      text-decoration: none;
+      color: #fff;
+}
+  .sub-list a:hover{
+      color: red;
+      cursor: pointer;
+
+  }
+
+  .load-btn {
+      width: 200px;
+      padding: 15px;
+      margin: 20px auto;
+      background-color: rgb(243, 72, 72);
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      font-size: 16px;
+  }
+
+  .load-btn:hover{
+    background-color: rgb(168, 55, 55);
+  }
+
+    /*Response section*/
+   
+  @media screen and (max-width:768px) {
+      .main-content{
+        width: auto;
+        margin: 0 ;
+    }
+  
+    .post > p {
+      grid-column: 1/ -1;
+      margin: 0 20px;
+    }
+    .post > blockquote {
+     padding: 0 10px;
+    }
+    .tip{
+      grid-column: 1/ -1;
+      font-size: 20px;
+    }
+  }
